@@ -1,0 +1,118 @@
+.header {
+    background-color: $header-bg-color;
+    position: relative;
+
+    padding: 0 32px;
+
+    @include mobile {
+        padding: 0 16px;
+    }
+
+    &__wrapper { 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;   
+        min-height: $header-width;
+
+    }
+
+    &__loupe {
+        margin: 0 0 0 34px;
+    }
+
+    &__btn {
+        background-color: transparent;
+        border: none;
+        margin: 0 34px 0 0;
+        cursor: pointer;
+
+        @include mobile {
+            margin: 0;
+        } 
+
+    }
+
+    &__person {
+        margin: 0 34px 0 0;
+
+        @include mobile {
+            display: none;
+        } 
+
+    }
+
+    &__cart {
+        @include mobile {
+            display: none;
+        } 
+    }
+
+    &__navigation {
+        position: absolute;
+        right: 0;
+
+        padding: 37px 73px 157px 33px;
+        background-color: #FFFFFF;
+        height: 764px;
+        box-sizing: border-box;
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+
+        z-index: 1;
+    }
+
+    &__hidden {
+        display: none;
+    }
+
+    &__menu-title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        text-transform: uppercase;
+        color: #000000;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+        margin-bottom: 24px;
+    }
+
+    &__menu-list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__submenu-list {
+        display: flex;
+        flex-direction: column;
+        gap: 11px;
+    }
+
+    &__menu-subtitle {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: $dark-pink;
+
+        text-transform: uppercase;
+    }
+
+    &__submenu-link {
+        text-decoration: none;
+        font-size: 14px;
+        color: $dark-gray;
+    
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__menu-close {
+        position: absolute;
+        right: 16px;
+        top: 16px;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+ }

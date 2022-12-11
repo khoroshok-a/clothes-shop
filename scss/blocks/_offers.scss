@@ -1,0 +1,86 @@
+.offers {
+    margin-top: 65px;
+    padding: 0 16px;
+
+    @include tablet {
+        margin-top: 20px;
+    }
+
+    @include mobile {
+        margin-top:  64px;
+    }
+
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; 
+    }        
+
+    &__item {
+        width: 31.58%;
+        min-height: 260px;
+        margin: 0 0 32px 0;
+        color: white;
+        background: $gray;   
+        background-repeat: no-repeat;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        text-transform: uppercase;
+
+        @include tablet{
+            min-height: 168px;
+        }
+
+        @include mobile{
+            width: 100%;
+            min-height: 249px;
+        }
+    }
+
+    &__item-1 {
+        background-image: url('../../img/offers-1.jpg');
+        background-size: cover;
+    }
+    &__item-2 {
+        background-image: url('../../img/offers-2.jpg');
+        background-size: cover;
+    }
+    &__item-3 {
+        background-image: url('../../img/offers-3.jpg');
+        background-size: cover;
+    }
+    &__item-4 {
+        background-image: url('../../img/offers-4.jpg');
+        background-size: cover;
+        width: 100%;
+        min-height: 180px;
+        margin: 0;
+
+        @include tablet{
+            min-height: 116px;
+        }
+
+    }
+
+    &__title {
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+    }
+
+    &__subtitle {
+
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+        text-align: center;
+
+        color: $dark-pink;
+    }
+
+}

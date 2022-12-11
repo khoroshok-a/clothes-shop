@@ -1,0 +1,90 @@
+
+ .brand {
+    display: flex;
+
+    @include mobile {
+        min-height: 363px;    
+        justify-content: center; 
+    } 
+  
+    &__img {
+        background-color: $light-pink;
+        width: 50%;
+        height: auto;  
+
+        @include mobile {
+            display: none;     
+        }
+
+    }
+
+    &__title-wrapper {
+        background-color: $light-pink;
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        padding: 0 0 0 60px;
+
+        @include tablet {
+            padding: 0 0 0 39px;     
+        }
+
+        @include mobile {
+            padding: 0;  
+            justify-content: center; 
+        }
+
+    }
+
+    &__title {
+        font-weight: 900;
+        font-size: 48px;
+        line-height: 58px;
+        text-transform: uppercase;
+        position: relative;
+    
+        @include tablet {
+            font-size: 44px;
+            line-height: 53px;
+        }
+
+        @include mobile {
+            font-size: 38px;
+            line-height: 46px;
+        }
+
+        &:before {
+            content: '';
+            width: 12px;
+            height: 100%;
+            left: -26px;
+
+            position: absolute;
+            background-color: $dark-pink;
+        }
+
+    }
+
+    &__subtitle {
+        display: block;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 38px;
+
+        @include tablet {
+            font-size: 24px;
+            line-height: 29px;
+        }
+
+        @include mobile {
+            font-size: 20px;
+            line-height: 24px;
+        }
+
+    }
+
+    &__subtitle-pink {
+        color: $dark-pink;
+    }
+
+}
