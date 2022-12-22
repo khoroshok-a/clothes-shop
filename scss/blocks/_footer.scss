@@ -136,6 +136,7 @@
         fill: #FFFFFF;
         &:hover {
             fill: $dark-pink;
+            cursor: pointer;
         }
 
         &:hover .footer__social-svg-pattern {

@@ -25,7 +25,7 @@ body {
   }
   
 
-  .btn {
+  .btn_darkpink {
     font-size: 16px;
     line-height: 19px;
     color: $pink;
@@ -34,9 +34,7 @@ body {
     background-color: transparent;
     border: 1px solid $pink;
     text-align: center;
-  }
 
-  .btn_darkpink {
     background-color: $dark-pink;
     color: $white;
   }

@@ -1,0 +1,31 @@
+.catalog {
+
+    &__settings-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 23px;
+        margin: 51px 16px 64px 16px;
+
+    }
+
+    &__dropdown {
+        text-transform: uppercase;
+        color: #6F6E6E;
+        background: transparent;
+        border: none;
+        
+        &:hover {
+            background-color: $dark-pink;
+            color: white;  
+        }
+    }
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 30px;
+    }
+
+}
